@@ -1,0 +1,144 @@
+.animeWatchTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 6.4rem;
+}
+
+.animeWatchTitleHead {
+  font-size: var(--fs-30);
+  color: var(--white-tint-3);
+  opacity: 0.9;
+  font-weight: inherit;
+}
+
+.animeTitle {
+  color: var(--green);
+}
+
+.animeTitle:hover {
+  cursor: pointer;
+}
+.epQuality {
+  font-size: var(--fs-14);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.epQualityLabel {
+  color: var(--white-tint-3);
+  margin-right: 1rem;
+  opacity: 0.8;
+}
+.chapterSelectorCont {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fs-16);
+  color: var(--white-tint3);
+  font-weight: 500;
+  /* position: relative; */
+}
+
+.chapterSelectorCont > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapterSelectorCont > div:first-child > span {
+  margin-right: auto;
+}
+.chapterSelectorCont > div:last-child > span {
+  margin-left: auto;
+}
+
+.epQualityDropdown {
+  /* flex: 0 1 auto; */
+  display: inline-block;
+  font-size: var(--fs-14);
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--background-color);
+  color: var(--white-tint-1);
+  padding: 0.5rem 0;
+  outline: none;
+  border: 3px solid var(--green-tint1);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 0.8rem;
+  /* text-transform: uppercase; */
+}
+
+.dropdownChapter {
+  min-width: 13rem;
+}
+.animeWatchEpisodeNavBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  border: 0.3rem solid var(--green-tint1);
+  border-radius: 1rem;
+  transition: transform ease-in-out 0.3s;
+  /* width: fit-content;
+  align-self: flex-start;
+  justify-items: flex-start; */
+}
+.animeWatchEpNavBtnIcon {
+  font-size: var(--fs-18);
+  color: var(--green-tint1);
+}
+.animeWatchEpNavBtnIconPrev {
+  margin-right: 1rem;
+}
+
+.animeWatchEpNavBtnIconNext {
+  margin-left: 1rem;
+  /* align-self: flex-end; */
+}
+
+.animeWatchEpisodeNavBtn:hover {
+  cursor: pointer;
+  /* background-color: var(--green-tint1); */
+  transform: scale(1.03);
+  /* color: var(--green-tint1); */
+  transition: transform ease-in-out 0.3s;
+}
+
+.imagesTopCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3.2rem 0;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.imageContainer .image {
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  /* object-fit: cover; */
+}
+
+.loadingNextPrevBtn {
+  display: inline-block;
+  height: var(--fs-44);
+  width: 14rem;
+  content: '';
+  opacity: 0.5;
+  border: 3px solid var(--white-tint-3);
+  background-color: yellow;
+  border-radius: 1rem;
+}

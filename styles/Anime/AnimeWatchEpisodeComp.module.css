@@ -1,0 +1,60 @@
+.animeWatchEpisode {
+  padding: 12.8rem 0 0 0;
+  font-weight: 500;
+}
+
+.animeWatchTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.animeWatchTitleHead {
+  font-size: var(--fs-30);
+  color: var(--white-tint-3);
+  opacity: 0.9;
+  font-weight: inherit;
+  /* margin-bottom: 2px; */
+}
+
+.animeTitle {
+  color: var(--green);
+  /* border-bottom: 0.3rem dashed var(--green); */
+  /* font-style: italic; */
+}
+
+.animeTitle:hover {
+  cursor: pointer;
+}
+.epQuality {
+  font-size: var(--fs-14);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.epQualityLabel {
+  color: var(--white-tint-3);
+  margin-right: 1rem;
+  opacity: 0.8;
+}
+
+.epQualityDropdown {
+  display: inline-block;
+  font-size: var(--fs-14);
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--background-color);
+  color: var(--white-tint-1);
+  padding: 0.5rem 0;
+  outline: none;
+  border: 3px solid var(--green-tint1);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 0.8rem;
+}
+
+.video {
+  padding: 3.2rem 9.6rem 0 9.6rem;
+  aspect-ratio: 16/9;
+}

@@ -1,0 +1,42 @@
+.moviesHome {
+  padding: 12.8rem 0;
+}
+
+.moviesHomeHeading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-bottom: 3.2rem;
+}
+
+.trendingHeading {
+  font-weight: 500;
+  font-size: var(--fs-36);
+  color: var(--white-tint-2);
+  /* text-transform: uppercase; */
+}
+
+.displayTypeBtnsCont {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.displayType {
+  padding: 1rem 2rem;
+  border: 3px solid var(--green-tint1);
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.selectedDisplayTypeBtn {
+  background-color: var(--green-tint1);
+  color: var(--background-color);
+  border: 3px solid var(--background-color);
+}
+.displayType:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.genre {
+  border: 0.5px solid #3b4658;
+  background-color: var(--background-color-shade-1);
+  padding: 2rem;
+}
+
+.genre > span {
+  display: block;
+  font-size: var(--fs-24);
+  font-weight: 500;
+  color: var(--white-tint-2);
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.genreMain {
+  display: flex;
+  flex-wrap: wrap;
+  width: inherit;
+  list-style: none;
+}
+
+.genreMain li {
+  color: var(--white-tint-1);
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 1rem;
+  transition: all ease-in-out 0.5s;
+}
+
+.genre li:hover {
+  cursor: pointer;
+  color: var(--green);
+  transition: all ease-in-out 0.5s;
+}

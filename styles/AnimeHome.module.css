@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  color: white;
+  /* padding: 12.8rem 0; */
+  gap: 6.4rem;
+  /* background-color: antiquewhite; */
+}
+
+.sideContainer {
+  flex: 7;
+}
+/* 
+.random {
+  flex: 3;
+} */

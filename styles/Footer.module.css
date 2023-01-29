@@ -1,0 +1,73 @@
+.footer {
+  margin-top: 8.2rem;
+  width: auto;
+  min-height: 100%;
+  border-top: 2px solid var(--border-1);
+  background-color: var(--background-color-shade-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 6.4rem 6.4rem;
+}
+
+.footerIntro,
+.footer > nav {
+  flex: 1;
+  text-align: center;
+  color: var(--white-tint-3);
+  font-size: var(--fs-16);
+}
+
+.footerLogo {
+  margin-bottom: 2rem;
+}
+
+.footerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: var(--fs-20);
+  margin-bottom: 4rem;
+}
+
+.icon {
+  display: block;
+  transition: all ease-in-out 0.5s;
+}
+
+.icon:hover {
+  color: var(--green);
+  transition: all ease-in-out 0.5s;
+  transform: scale(1.1);
+}
+
+.footerCopyright {
+  line-height: 1.4;
+  /* font-weight: 500; */
+  letter-spacing: 0.5px;
+}
+
+.footer > nav > p {
+  font-size: var(--fs-20);
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer > nav > ul {
+  list-style: none;
+}
+
+.footer > nav > ul > li {
+  margin-bottom: 2rem;
+  transition: all ease-in-out 0.5s;
+}
+.footer > nav > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.footer > nav > ul > li:hover {
+  color: var(--green);
+  transition: all ease-in-out 0.5s;
+}

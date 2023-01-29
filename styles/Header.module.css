@@ -1,0 +1,195 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem calc((100vw - 120rem) / 2 - 9.8rem);
+  font-size: var(--fs-18);
+  background-color: var(--background-color);
+  /* background-color: op; */
+  /* background:  */
+  position: fixed;
+  width: 100%;
+  /* opacity: 0.95; */
+  z-index: 999;
+  color: var(--white);
+  border-bottom: 2px solid rgb(100, 255, 218, 0.6);
+  /* backdrop-filter: blur(100px) saturate(180%); */
+}
+
+/* .headerLogo {
+  justify-content: flex-start;
+} */
+
+.searchContainer {
+  backdrop-filter: blur(100px);
+}
+
+.searchQueryResultCont {
+  margin-left: auto;
+}
+
+.header > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.formSearch {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.headerNavigate {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+  font-weight: 500;
+}
+
+.headerSearchBar {
+  font-size: inherit;
+  color: var(--fs-white);
+  padding: 1rem 3rem 1rem 2rem;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  width: 28rem;
+  background-color: var(--background-color-shade-1);
+}
+
+.headerSearchBar::placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+.headerSearchBar:focus {
+  border: none;
+  outline: none;
+}
+
+.formSearchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  align-self: stretch;
+  font-size: var(--fs-20);
+  color: var(--green);
+  background-color: var(--background-color-shade-1);
+  border: none;
+  border-left: 2px solid var(--green-tint1);
+}
+
+.formSearchBtn:hover {
+  cursor: pointer;
+}
+
+.searchResultDropdown {
+  position: absolute;
+  height: fit-content;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transform: translateY(100%);
+  border-top: 1px solid var(--green-tint1);
+  background-color: var(--background-color-shade-1);
+  overflow: hidden;
+  box-shadow: rgb(255, 255, 255, 0.1) 0px 1rem 3rem;
+}
+
+.displaySearchBlock {
+  display: block;
+}
+
+.displayHidden {
+  display: none;
+  pointer-events: none;
+}
+
+.searchBarCont {
+  position: relative;
+}
+.searchCancelBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  color: var(--white-tint-3);
+  opacity: 0.8;
+  font-size: var(--fs-14);
+}
+
+.searchCancelBtn:hover {
+  cursor: pointer;
+}
+
+.renderElement,
+.renderElementViewResults {
+  font-size: var(--fs-16);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  width: inherit;
+  height: auto;
+  padding: 1rem 2rem;
+  border-bottom: 5px solid var(--border-1);
+  border-left: 5px solid var(--border-1);
+  border-right: 5px solid var(--border-1);
+}
+
+.renderElement:hover {
+  color: var(--green);
+  border-left: 5px solid var(--green-tint1);
+  border-right: 5px solid var(--green-tint1);
+}
+
+.renderElementTitle,
+.renderElementDate {
+  display: block;
+}
+
+.renderElementTitle {
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.renderElementExtra {
+  display: flex;
+  gap: 2rem;
+}
+.renderElementDate {
+  /* font-weight: 500; */
+  color: var(--white-tint-3);
+  font-size: var(--fs-12);
+  letter-spacing: 0.5px;
+}
+
+.renderElementImg {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.renderElementViewResults {
+  display: block;
+  padding: 1.6rem 2rem;
+  font-size: var(--fs-16);
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--green-tint1);
+  text-transform: uppercase;
+}

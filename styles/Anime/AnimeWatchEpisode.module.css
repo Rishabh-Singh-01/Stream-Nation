@@ -1,0 +1,62 @@
+/* .animeWatchEpisode {
+  background-color: aliceblue;
+} */
+
+.animeWatchEpisodeNavBtnsComp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fs-16);
+  color: var(--white-tint3);
+  font-weight: 500;
+}
+
+.animeWatchEpisodeNavBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  border: 0.3rem solid var(--green-tint1);
+  border-radius: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+.animeWatchEpNavBtnIcon {
+  font-size: var(--fs-18);
+  color: var(--green-tint1);
+}
+.animeWatchEpNavBtnIconPrev {
+  margin-right: 1rem;
+}
+
+.animeWatchEpNavBtnIconNext {
+  margin-left: 1rem;
+}
+
+.animeWatchEpisodeNavBtn:hover {
+  cursor: pointer;
+  /* background-color: var(--green-tint1); */
+  transform: scale(1.03);
+  /* color: var(--green-tint1); */
+  transition: all ease-in-out 0.3s;
+}
+
+/* ESPECIALLY FOR THE MOVIES */
+
+.video {
+  padding: 3.2rem 0 9.6rem 9.6rem;
+  /* height: auto; */
+  /* aspect-ratio: auto; */
+}
+
+.watchTitleHeading {
+  font-size: var(--fs-30);
+  color: var(--green);
+  opacity: 0.9;
+  font-weight: 500;
+  /* margin-bottom: 2px; */
+}
+
+.watchTitleHeading::first-letter {
+  text-transform: uppercase;
+}

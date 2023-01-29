@@ -1,0 +1,99 @@
+.recentEpisodesContainer {
+  flex: 16;
+}
+
+.latest {
+  display: block;
+  font-weight: 500;
+  font-size: var(--fs-30);
+  color: var(--white-tint-2);
+  line-height: 1;
+  padding-bottom: 3.2rem;
+}
+
+.recentEpisode {
+  height: auto;
+  background-color: #233044;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  overflow: hidden;
+  transition: all ease-in-out 0.5s;
+}
+
+.recentEpisodeImageCont {
+  position: relative;
+  width: inherit;
+  height: 23rem;
+  /* overflow: hidden; */
+}
+.recentEpisodeImg {
+  object-fit: cover;
+  /* overflow: hidden; */
+}
+
+.recentEpisodeImageCont::after {
+  content: '';
+  position: absolute;
+  top: 65%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(
+    0deg,
+    var(--background-color-shade-1) 0,
+    transparent 50%
+  );
+}
+
+.episodeNum {
+  position: absolute;
+  /* bottom: 0; */
+  top: 0;
+  right: 0;
+  /* transform: translate(1rem, 1rem); */
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  background-color: var(--background-color);
+  color: var(--white-tint-1);
+  font-weight: 600;
+  font-family: inherit;
+  /* border-top-left-radius: rem; */
+}
+
+.recentEpisodeTitle {
+  font-size: var(--fs-14);
+  letter-spacing: 0.05rem;
+  line-height: 1.3;
+  padding: 1rem 1rem 0 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.subOrDub {
+  position: absolute;
+  display: inline;
+  text-align: center;
+  top: 2%;
+  left: -11%;
+  text-transform: uppercase;
+  font-size: var(--fs-12);
+  padding: 0.2rem 2rem;
+  transform: rotate(-45deg);
+  z-index: 1;
+  font-weight: 800;
+  color: black;
+  background-color: var(--green);
+}
+
+.recentEpisode:hover {
+  cursor: pointer;
+  color: var(--green);
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+  opacity: 0.7;
+  /* box-shadow: rgb(255, 255, 255, 0.15) 0px 7px 29px 0px; */
+}
